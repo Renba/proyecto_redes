@@ -11,6 +11,8 @@ fwrite($MyShell,$TargetUser."\r");
 sleep(1);
 fwrite($MyShell,$TargetPass."\r");
 sleep(1);
+fwrite($MyShell,"show serial"."\r");
+sleep(1);
 while($buffer=fgets($MyShell,4096))
 {
   print($buffer);
