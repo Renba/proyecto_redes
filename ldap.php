@@ -1,36 +1,30 @@
 <?php
 echo "<h3>Consulta de prueba LDAP</h3>";
 echo "Conectando ...";
-$ds=ldap_connect("148.209.67.42");  // Debe ser un servidor LDAP válido!
-echo "El resultado de la conexión es " . $ds . "<br />";
+$base = "ou=Facultad de Matematicas, ou=INET, dc=inet, dc=uady, dc=mx";
+$host = "ldap://148.209.67.42";
+$port = 389;
+$user = "A07000772";
+$pass = "Abril0772";
+$user_dn = "uid=".$user;
+#$criteria = '(sAMAccountName=%s)' %username
+#$attributes = ['*'];
 
-if ($ds) {
-    echo "Vinculando ...";
-    $base = "ou=Facultad de Matematicas, ou=INET, dc=inet, dc=uady, dc=mx";
-    $r=ldap_bind($ds,'A09002968','Toto2000.');     // Esta es una vinculación "anónima", tipicamente
-                           // con acceso de sólo lectura.
-    echo "El resultado de la vinculación es " . $r . "<br />";
+$ldapconn = ldap_connect($host, $port)
+    or die("Could not connect to LDAP server.");
 
-    echo "Buscando (sn=S*) ...";
-    // Busca la entrada de apellidos
-    $sr=ldap_search($ds, $base);
-    echo "El resultado de la búsqueda es " . $sr . "<br />";
+if ($ldapconn) {
 
-    echo "El número de entradas devueltas es " . ldap_count_entries($ds, $sr) . "<br />";
+    // binding to ldap server
+    $ldapbind = ldap_bind($ldapconn, $user.'@'.$host, $pass);
 
-    echo "Obteniendo entradas ...<p>";
-    $info = ldap_get_entries($ds, $sr);
-    echo "Los datos para " . $info["count"] . " objetos devueltos:<p>";
-
-    for ($i=0; $i<$info["count"]; $i++) {
-        echo "El dn es: " . $info[$i]["dn"] . "<br />";
-        echo "La primera entrada cn es: " . $info[$i]["cn"][0] . "<br />";
+    // verify binding
+    if ($ldapbind) {
+        echo "LDAP bind successful...";
+    } else {
+        echo "LDAP bind failed...";
     }
 
-    echo "Cerando la conexión";
-    ldap_close($ds);
-
-} else {
-    echo "<h4>No se puede conectar al servidor LDAP</h4>";
 }
+
 ?>
