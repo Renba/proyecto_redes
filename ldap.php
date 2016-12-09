@@ -7,7 +7,7 @@ echo "El resultado de la conexión es " . $ds . "<br />";
 if ($ds) {
     echo "Vinculando ...";
     $base = "ou=Facultad de Matematicas, ou=INET, dc=inet, dc=uady, dc=mx";
-    $r=ldap_bind($ds,'a09002968@alumnos.uady.mx','Toto2000.');     // Esta es una vinculación "anónima", tipicamente
+    $r=ldap_bind($ds,'A09002968','Toto2000.');     // Esta es una vinculación "anónima", tipicamente
                            // con acceso de sólo lectura.
     echo "El resultado de la vinculación es " . $r . "<br />";
 
