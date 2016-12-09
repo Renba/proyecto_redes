@@ -1,7 +1,7 @@
 <?php
 echo "<h3>Consulta de prueba LDAP</h3>";
 echo "Conectando ...";
-$ds=ldap_connect("ladp://148.209.67.42");  // Debe ser un servidor LDAP válido!
+$ds=ldap_connect("148.209.67.42");  // Debe ser un servidor LDAP válido!
 echo "El resultado de la conexión es " . $ds . "<br />";
 
 if ($ds) {
