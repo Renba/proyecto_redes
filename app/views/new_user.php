@@ -45,6 +45,7 @@ session_start();
                   <label for="formGroupExampleInput2">Email</label>
                   <input type="email" class="form-control" id="email" placeholder="example@example.com">
                 </div>
+                <button type="submit" class="btn btn-primary">Guardar</button>
               </form>
             </div>
         </div>
