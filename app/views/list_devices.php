@@ -15,6 +15,7 @@ if($result->num_rows > 0){
     <tr>
       <th>Nombre de Dispositivo</th>
       <th>Mac addresss</th>
+      <th>Estado</th>
       <th>Opciones</th>
     </tr>
   </thead>
@@ -28,6 +29,9 @@ if($result->num_rows > 0){
         </td>
         <td>
           <?= $device["mac_address"] ?>
+        </td>
+        <td>
+          <?= $device["status"] ?>
         </td>
 
         <td>
