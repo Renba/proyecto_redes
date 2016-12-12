@@ -1,8 +1,8 @@
 <?php
 session_start();
-require_once("../daos/devicesDao.php");
+require_once("../daos/deviceDao.php");
 $result = getDevicesByMatricula($_SESSION["email"]);
-$devices = new Array();
+$devices = array();
 
 if($result->num_rows > 0){
   while($row = $result->fetch_assoc()){
