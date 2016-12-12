@@ -1,6 +1,6 @@
 function doLogin(email, password){
   var parametros = {
-          "email" : email,
+          "email" : email.toUpperCase(),
           "password" : password
   };
   $.ajax({

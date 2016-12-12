@@ -36,14 +36,14 @@ session_start();
             </div>
             <div class="col-md-6">
               <form action="../controllers/new_user.php" method="post">
-                <input type="name" class="form-control hidden" id="matricula" value="<?= $_SESSION["email"] ?>">
+                <input type="name" class="form-control hidden" id="matricula" name="matricula" value="<?= $_SESSION["email"] ?>">
                 <div class="form-group">
                   <label for="formGroupExampleInput">Nombre</label>
-                  <input type="name" class="form-control" id="name" placeholder="nombre completo">
+                  <input type="name" class="form-control" id="name" name="name" placeholder="nombre completo">
                 </div>
                 <div class="form-group">
                   <label for="formGroupExampleInput2">Email</label>
-                  <input type="email" class="form-control" id="email" placeholder="example@example.com">
+                  <input type="email" class="form-control" id="email" name="email" placeholder="example@example.com">
                 </div>
                 <button type="submit" class="btn btn-primary">Guardar</button>
               </form>

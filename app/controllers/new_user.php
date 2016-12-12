@@ -8,5 +8,5 @@ require_once("../daos/userDao.php");
 if(saveInfo($matricula, $name, $email)){
   header('location: ../views/index.php');
 }else{
-  header('location: ../views/new_user.php');  
+  header('location: ../views/new_user.php');
 }
