@@ -14,6 +14,8 @@ function doLogin(email, password){
               $("#notice").html(response);
               if(response == "ok"){
                 window.location.href="index.php"
+              }elseif(response == "new"){
+                window.location.href="new_user.php"
               }
           }
   });

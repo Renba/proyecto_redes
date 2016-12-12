@@ -8,25 +8,19 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.php">Home</a>
+            <a class="navbar-brand" href="http://www.matematicas.uady.mx/static/">Facultad de Mateḿaticas</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="../views/persons.php">Personas</a>
-                </li>
-                <li>
-                    <a href="../views/indicators.php">Indicadores</a>
-                </li>
-                <li>
-                    <a href="../views/reports.php">Reportes</a>
+                    <a href="../views/devices.php">Dispositivos</a>
                 </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Configuraciones <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li>
-                            <a href="../views/users.php">Usuarios</a>
+                            <a href="../views/My Información.php">Usuarios</a>
                         </li>
                         <li>
                             <a href="../controllers/logout.php">Iniciar Sesión/Cerrar Sesión</a>

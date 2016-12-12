@@ -1,4 +1,6 @@
 <?php
+require_once("../daos/userDao.php");
+
 session_start();
 $_SESSION["valid"] = false;
 $_SESSION["email"] = "";
@@ -18,7 +20,11 @@ if($status == ""){
   if($ldapbind){
     $_SESSION["valid"] = true;
     $_SESSION["email"] = $user_email;
-    $status = "ok";
+    $status = "new";
+    $result= getUser($_SESSION["email"]);
+    if($result->num_rows > 0){
+      $status = "ok";
+    }
   }else{
       $status = "No existe el usuario con ese usuario y contraseña";
   }

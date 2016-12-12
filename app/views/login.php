@@ -23,7 +23,7 @@ if(isset($_SESSION["valid"]) && $_SESSION["valid"] == true){
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Home</a>
+                <a class="navbar-brand" href="http://www.matematicas.uady.mx/static/">Home</a>
             </div>
         </div>
         <!-- /.container -->

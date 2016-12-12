@@ -1,11 +1,9 @@
 <?php
 session_start();
-
   if(isset($_SESSION["valid"])){
     if($_SESSION["valid"] == false){
       header('location: ../views/login.php');
     }
-
   }else{
     header('location: ../views/login.php');
   }
