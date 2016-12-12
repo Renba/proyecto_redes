@@ -1,4 +1,5 @@
 <?php include('layouts/layout2.php'); ?>
+<script src="../../assets/js/device.js"></script>
 </head>
 
     <!-- Navigation -->
@@ -26,18 +27,6 @@
                   <button type="button" class="btn btn-success" onclick="displayCreate();"><span class="glyphicon glyphicon-plus"></span> Agregar Dispotivo</button>
                 </h1>
               </div>
-          </div>
-          <div id="index">
-            <table class="table">
-              <thead>
-                <tr>
-                  <th>Nombre de Dispositivo</th>
-                  <th>Mac addresss</th>
-                </tr>
-              </thead>
-              <tbody id="body">
-              </tbody>
-            </table>
           </div>
           <div id="action">
           </div>
