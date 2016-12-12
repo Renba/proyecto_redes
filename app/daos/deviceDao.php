@@ -5,7 +5,7 @@ include_once 'connection.php';
 function saveInfo($matricula, $mac_address, $name, $status)
 {
     $sentence_sql = "INSERT INTO devices ( matricula, mac_address, name, status) VALUES
-        ('" . $matricula . "','" . $mac_address . "','" . $name . "','"  $status . "');";
+        ('" . $matricula . "','" . $mac_address . "','" . $name . "','" . $status . "');";
     return execute_query($sentence_sql);
 }
 function getDevices()
