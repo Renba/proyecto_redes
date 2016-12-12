@@ -19,5 +19,4 @@
 
     <!-- Custom Fonts -->
     <link href="../../assets/bootstrap/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-  
+    <script src="../../assets/js/jquery.min.js"></script>

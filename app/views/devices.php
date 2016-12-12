@@ -1,5 +1,7 @@
 <?php include('layouts/layout2.php'); ?>
-<script src="../../assets/js/device.js"></script>
+<script src="../../assets/js/device.js">
+  
+</script>
 </head>
 
     <!-- Navigation -->

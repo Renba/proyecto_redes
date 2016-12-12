@@ -18,23 +18,6 @@ if($result->num_rows > 0){
     </tr>
   </thead>
   <tbody id="body">
-
-<?php if(count($devices) > 0) { ?>
-    <?php foreach ($devices as $device) {?>
-      <tr>
-        <td>
-          <?= $device["name"] ?>
-        </td>
-        <td>
-          <?= $device["mac_address"] ?>
-        </td>
-
-        <td>
-          <button type="button" class="btn btn-danger" onclick="deleteDevice(<?= $device["id"] ?>)">Delete</button>
-        </td>
-      </tr>
-
-    <?php }    ?>
-<?php } ?>
+    aepofkkaepofk
   </tbody>
 </table>
