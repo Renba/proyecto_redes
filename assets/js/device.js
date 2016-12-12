@@ -36,10 +36,11 @@ function displayCreate(){
 
 
 
-function deleteDevice(id){
+function deleteDevice(id, mac){
   if (window.confirm('Seguro que quieres eliminar el dispositivo seleccionado?')){
     var parametros = {
       "id" : id,
+      "mac": mac,
     };
     $.ajax({
             data:  parametros,
