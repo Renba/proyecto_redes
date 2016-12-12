@@ -2,7 +2,7 @@
 //incluye el dao con la información de la BD:
 include_once 'connection.php';
 
-function saveInfo($matricula, $name, $email)
+function saveInfo($matricula, $mac_address, $name)
 {
     $sentence_sql = "INSERT INTO devices ( matricula, mac_address, name) VALUES
         ('" . $matricula . "','" . $mac_address . "','" . $name . "');";
