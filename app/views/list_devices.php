@@ -8,6 +8,7 @@ if($result->num_rows > 0){
   while($row = $result->fetch_assoc()){
     array_push($devices, $row);
   }
+}
 ?>
 <table class="table">
   <thead>
@@ -18,6 +19,23 @@ if($result->num_rows > 0){
     </tr>
   </thead>
   <tbody id="body">
-    aepofkkaepofk
+
+<?php if(count($devices) > 0) { ?>
+    <?php foreach ($devices as $device) {?>
+      <tr>
+        <td>
+          <?= $device["name"] ?>
+        </td>
+        <td>
+          <?= $device["mac_address"] ?>
+        </td>
+
+        <td>
+          <button type="button" class="btn btn-danger" onclick="deleteDevice(<?= $device["id"] ?>)">Delete</button>
+        </td>
+      </tr>
+
+    <?php }    ?>
+<?php } ?>
   </tbody>
 </table>

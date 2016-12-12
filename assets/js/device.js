@@ -1,3 +1,6 @@
+$(document).ready(function(){
+  displayDevices();
+});
 
 function displayDevices(){
   $.ajax({
