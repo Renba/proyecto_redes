@@ -1,7 +1,7 @@
 <?php session_start(); ?>
 <div class="col-lg-6">
   <form id="form">
-    <input type="text" class="form-control"  name="matricula" value="<?= $_SESSION["email"]?>">
+    <input type="text" class="form-control hidden"  name="matricula" value="<?= $_SESSION["email"] ?>">
 
     <div class="form-group">
       <label for="formGroupExampleInput">Nombre de Dispositivo</label>
