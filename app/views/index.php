@@ -31,7 +31,7 @@ session_start();
                   Módulos
                 </h1>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-6">
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h4><i class="fa fa-fw fa-check"></i> Personas</h4>
@@ -42,7 +42,7 @@ session_start();
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-6">
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h4><i class="fa fa-fw fa-gift"></i> Indicadores</h4>
@@ -53,40 +53,32 @@ session_start();
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-compass"></i> Easy to Use</h4>
-                    </div>
-                    <div class="panel-body">
-                        <p>Texto sobre los reportes, puede ser cualquier cosa</p>
-                        <a href="reports.php" class="btn btn-danger">Ir a Reportes</a>
-                    </div>
-                </div>
-            </div>
         </div>
 
         <!-- Features Section -->
         <div class="row">
             <div class="col-lg-12">
-                <h2 class="page-header">Desarrollo web en Ajax</h2>
+                <h2 class="page-header">Redes y Seguridades</h2>
             </div>
             <div class="col-md-6">
-                <p>Aplicación de la Matería de Desarrollo web en ajax</p>
+                <p>Proyecto de Redes y Seguridad</p>
                 <ul>
                   <h3>Se aplicarón las siguientes tecnologias:</h3>
                     <li><strong>Ajax</strong>
                     </li>
                     <li>jQuery</li>
-                    <li>JQPlot</li>
-                    <li>JQuery Ui</li>
+                    <li>PHP</li>
                     <li>Bootstrap</li>
                     <li>JavaScript</li>
                     <li>CSS</li>
                     <li>PHP</li>
                     <li>MYSQL</li>
+                    <li>APACHE 2</li>
+                    <li>LDAP</li>
+                    <li>PHP SSH2</li>
                 </ul>
                 <h2>
+                  <span>Ling al repo en <strong>GitHub</strong> <a href="https://github.com/Renba/proyecto_redes">@proyecto_redes</a></span>
                   <p>Gracias por su atención</p>
                 </h2>
             </div>
