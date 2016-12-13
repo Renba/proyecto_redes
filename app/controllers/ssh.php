@@ -14,7 +14,7 @@ function addMac($mac){
   sleep(1);
   fwrite($MyShell,$TargetPass."\r");
   sleep(1);
-  fwrite($MyShell,"config macfilter add ".." 8 wl-labs A09002968"."\r");
+  fwrite($MyShell,"config macfilter add ".$mac." 8 wl-labs A09002968"."\r");
   sleep(1);
   // while($buffer=fgets($MyShell,4096))
   // {
