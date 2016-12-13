@@ -32,7 +32,7 @@ if($result->num_rows > 0){
                   <label for="formGroupExampleInput2">Email</label>
                   <input type="email" class="form-control" id="email" name="email" value ="<?= $row["email"] ?>" placeholder="example@example.com">
                 </div>
-                <button type="submit" class="btn btn-primary" disabled>Guardar</button>
+                <button type="submit" class="btn btn-primary">Guardar</button>
               </form>
             </div>
         </div>
