@@ -28,7 +28,7 @@ function displayCreate(){
   function createDevice(){
       if(validateMac($("#mac_address").val())){
         alert("Mac Adress valida");
-/*
+
         $( "#device-button" ).prop( "disabled", false );
         $.post('../controllers/add_device.php', $('#form').serialize(), function(response){
           $("#notice").html(response);
@@ -36,7 +36,6 @@ function displayCreate(){
             displayDevices();
           }
         });
-        */
       }else{
         alert("Mac Adress Invalida");
         displayCreate();
