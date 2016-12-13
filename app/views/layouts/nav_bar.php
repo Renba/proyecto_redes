@@ -1,4 +1,4 @@
-<?=
+<?php
 session_start();
 require_once("../daos/userDao.php");
 $result = getUser($_SESSION["email"]);
@@ -17,7 +17,7 @@ if($result->num_rows > 0){
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="edit_user.php"> <?= $row["name"] ?> </a>
+            <a class="navbar-brand" href="edit_user.php"> <?= $row["name"] ?> </a>
             <a class="navbar-brand" href="http://www.matematicas.uady.mx/static/">FMAT</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
