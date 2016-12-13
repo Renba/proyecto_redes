@@ -1,5 +1,5 @@
 <?php
-function addMac($mac){
+function addMac($mac, $comment){
   $TargetIP='192.168.69.18';
   $TargetUser='rys2016';
   $TargetPass='2016RyS';
@@ -14,7 +14,9 @@ function addMac($mac){
   sleep(1);
   fwrite($MyShell,$TargetPass."\r");
   sleep(1);
-  fwrite($MyShell,"config macfilter add ".$mac." 8 wl-labs A09002968"."\r");
+  fwrite($MyShell,"config macfilter add ".$mac." 8 wl-labs ".$comment."\r");
+  sleep(1);
+  fwrite($MyShell,"logout"."\r");
   sleep(1);
   // while($buffer=fgets($MyShell,4096))
   // {
@@ -39,4 +41,7 @@ function removeMac($mac){
   sleep(1);
   fwrite($MyShell,"config macfilter delete ".$mac."\r");
   sleep(1);
+  fwrite($MyShell,"logout"."\r");
+  sleep(1);
+
 }
