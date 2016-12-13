@@ -33,7 +33,7 @@ if($result->num_rows > 0){
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Configuraciones <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li>
-                            <a href="edit_user.php">Editar mi información</a>
+                            <a href="edit_user.php">Editar mi información (<?= $_SESSION["email"] ?>)</a>
                         </li>
                         <li>
                             <a href="../controllers/logout.php">Iniciar Sesión/Cerrar Sesión</a>
