@@ -22,7 +22,7 @@ function getUser($matricula)
 }
 function updateUser($matricula, $name, $email)
 {
-    $sentence_sql = "UPDATE users SET name ='$name', email ='$email' WHERE id = '$id'";
+    $sentence_sql = "UPDATE users SET name ='$name', email ='$email' WHERE matricula = '$matricula'";
     $users = execute_query($sentence_sql);
     return $users;
 }
