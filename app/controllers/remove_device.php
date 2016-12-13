@@ -7,7 +7,7 @@ $row = $result->fetch_assoc();
 $mac = $row["mac_address"];
 require_once('ssh.php');
 
-if(deleteDevice($id){
+if(deleteDevice($id)){
   removeMac($mac);
   $status = "ok";
 }
