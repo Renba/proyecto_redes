@@ -5,6 +5,8 @@ $id = $_POST['id'];
 $result = getDevice($id);
 $row = $result->fetch_assoc();
 $mac = $row["mac_address"];
+require_once('ssh.php');
+
 if(updateDevice($id, 'D')){
   removeMac($mac);
   $status = "ok";
