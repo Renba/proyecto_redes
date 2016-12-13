@@ -42,7 +42,7 @@ function displayCreate(){
 
   function validateMac(mac){
     var regex = /^([0-9A-F]{2}[:-]){5}([0-9A-F]{2})$/;
-    return regex.test(mac));
+    return regex.test(mac);
   }
 
 function deleteDevice(id){
