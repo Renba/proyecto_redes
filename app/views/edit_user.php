@@ -1,7 +1,7 @@
 <?php
 session_start();
 require_once("../daos/userDao.php");
-$result = getUser();
+$result = getUser($_SESSION["email"]);
 if($result->num_rows > 0){
   $row = $result->fetch_assoc();
 }
