@@ -35,7 +35,7 @@ if($result->num_rows > 0){
         </td>
 
         <td>
-          <button type="button" class="btn btn-danger" onclick="deleteDevice(<?= $device["id"] ?>,\"<?= $device["mac_address"]?>\")">Delete</button>
+          <button type="button" class="btn btn-danger" onclick="deleteDevice(<?= $device["id"] ?>)">Delete</button>
         </td>
       </tr>
 
