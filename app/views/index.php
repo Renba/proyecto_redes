@@ -64,8 +64,7 @@ session_start();
                 <p>Proyecto de Redes y Seguridad</p>
                 <ul>
                   <h3>Se aplicarón las siguientes tecnologias:</h3>
-                    <li><strong>Ajax</strong>
-                    </li>
+                    <li>Ajax</li>
                     <li>jQuery</li>
                     <li>PHP</li>
                     <li>Bootstrap</li>

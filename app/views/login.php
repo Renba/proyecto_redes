@@ -61,8 +61,8 @@ if(isset($_SESSION["valid"]) && $_SESSION["valid"] == true){
                    <br>
                    </form>
                   <br>
-                   <div id="notice">
-                     Error
+                   <div id="notice" style="">
+
                    </div>
                </div>
             </div>
@@ -78,7 +78,7 @@ if(isset($_SESSION["valid"]) && $_SESSION["valid"] == true){
         <div class="well">
             <div class="row">
                 <div class="col-md-8">
-                  <p>Proyecto de la Asignatura de Desarrollo web con Ajax de la Facultad de Matemáticas</p>
+                  <p>Proyecto de la Asignatura de Redes y Seguridad de Computadoras de la Facultad de Matemáticas</p>
                 </div>
                 <div class="col-md-4">
                     <a class="btn btn-lg btn-default btn-block" href="index.php">Home</a>

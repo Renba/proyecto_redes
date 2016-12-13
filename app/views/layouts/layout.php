@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <link rel="icon" href="http://example.com/favicon.png">
 
-    <title>Proyecto Ajax</title>
+    <title>Proyecto de Redes</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">

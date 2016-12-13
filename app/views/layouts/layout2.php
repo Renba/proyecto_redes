@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Proyecto Ajax</title>
+    <title>Proyecto de Redes</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
