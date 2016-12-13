@@ -19,6 +19,9 @@
                 <li>
                     <a href="../views/devices.php">Dispositivos</a>
                 </li>
+                <li>
+                  <a href="#"></a>
+                </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Configuraciones <b class="caret"></b></a>
                     <ul class="dropdown-menu">
