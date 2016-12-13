@@ -27,7 +27,7 @@ function displayCreate(){
 
   function createDevice(){
       if(validateMac($("#mac_address").val())){
-        $( "#device-button" ).prop( "disabled", false );
+        $("#device-button").prop( "disabled", true);
         $.post('../controllers/add_device.php', $('#form').serialize(), function(response){
           $("#notice").html(response);
           if(response == 'ok'){
