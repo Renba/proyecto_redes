@@ -34,22 +34,22 @@ session_start();
             <div class="col-md-6">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-check"></i> Personas</h4>
+                        <h4><i class="fa fa-fw fa-check"></i> Secure Shell</h4>
                     </div>
                     <div class="panel-body">
-                        <p>Texto sobre el catalogo de personas, puede ser cualquier cosa</p>
-                        <a href="persons.php" class="btn btn-info">Ir a Personas</a>
+                        <p>Se uso el la libreria PHP SSH2</p>
+                        <a href="http://php.net/manual/es/book.ssh2.php" class="btn btn-info">PHP SSH2</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-gift"></i> Indicadores</h4>
+                        <h4><i class="fa fa-fw fa-gift"></i> Lightweight Directory Access Protocol</h4>
                     </div>
                     <div class="panel-body">
-                        <p>Texto sobre el catalogo de indicadores, puede ser cualquier cosa</p>
-                        <a href="indicators.php" class="btn btn-success">Ir a Indicadores</a>
+                        <p>Se uso la librería PHP OpenLdap</p>
+                        <a href="http://php.net/manual/es/book.ldap.php" class="btn btn-success">LDAP</a>
                     </div>
                 </div>
             </div>

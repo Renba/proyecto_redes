@@ -20,6 +20,12 @@ function getUser($matricula)
     $users = execute_query($sentence_sql);
     return $users;
 }
+function updateUser($matricula, $name, $email)
+{
+    $sentence_sql = "UPDATE users SET name ='$name', email ='$email' WHERE id = '$id'";
+    $users = execute_query($sentence_sql);
+    return $users;
+}
 
 
 ?>

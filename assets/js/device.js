@@ -26,15 +26,24 @@ function displayCreate(){
 }
 
   function createDevice(){
-    $.post('../controllers/add_device.php', $('#form').serialize(), function(response){
-       $("#notice").html(response);
-       if(response == 'ok'){
-         displayDevices();
-       }
-    });
+      if(validateMac($("#mac_address").val())){
+        $( "#device-button" ).prop( "disabled", false );
+        $.post('../controllers/add_device.php', $('#form').serialize(), function(response){
+          $("#notice").html(response);
+          if(response == 'ok'){
+            displayDevices();
+          }
+        });
+      }else{
+        alert("Mac Adress Invalida");
+        displayCreate();
+      }
   }
 
-
+  function validateMac(mac){
+    var regex = /^([0-9A-F]{2}[:-]){5}([0-9A-F]{2})$/;
+    return regex.test(mac));
+  }
 
 function deleteDevice(id){
   if (window.confirm('Seguro que quieres eliminar el dispositivo seleccionado?')){

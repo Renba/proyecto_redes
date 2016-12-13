@@ -23,6 +23,9 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Configuraciones <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li>
+                            <a href="edit_user.php">Editar mi información</a>
+                        </li>
+                        <li>
                             <a href="../controllers/logout.php">Iniciar Sesión/Cerrar Sesión</a>
                         </li>
                     </ul>

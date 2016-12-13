@@ -9,10 +9,10 @@
     </div>
     <div class="form-group">
       <label for="formGroupExampleInput">Mac Address</label>
-      <input type="text" class="form-control"  name="mac_address" placeholder="xx:xx:xx:xx:xx:xx" required>
+      <input type="text" class="form-control" id="mac_address" name="mac_address" placeholder="xx:xx:xx:xx:xx:xx" required>
     </div>
 
-    <button class="btn btn-lg btn-primary btn-block" type="submit"
+    <button class="btn btn-lg btn-primary btn-block" id="device-button" type="submit"
     onclick="createDevice(); return false;">Guardar</button>
 
   </form>
