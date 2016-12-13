@@ -1,6 +1,6 @@
 <?php include('layouts/layout2.php'); ?>
 <script src="../../assets/js/device.js">
-  
+
 </script>
 </head>
 
@@ -26,7 +26,7 @@
               </div>
               <div class="col-lg-2">
                 <h1 class="page-header">
-                  <button type="button" class="btn btn-success" onclick="displayCreate();"><span class="glyphicon glyphicon-plus"></span> Agregar Dispotivo</button>
+                  <button type="button" class="btn btn-success" onclick="displayCreate();"><span class="glyphicon glyphicon-plus"></span> Agregar Dispositivo</button>
                 </h1>
               </div>
           </div>
