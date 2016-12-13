@@ -27,6 +27,8 @@ function displayCreate(){
 
   function createDevice(){
       if(validateMac($("#mac_address").val())){
+        alert("Mac Adress valida");
+/*
         $( "#device-button" ).prop( "disabled", false );
         $.post('../controllers/add_device.php', $('#form').serialize(), function(response){
           $("#notice").html(response);
@@ -34,6 +36,7 @@ function displayCreate(){
             displayDevices();
           }
         });
+        */
       }else{
         alert("Mac Adress Invalida");
         displayCreate();
@@ -41,8 +44,9 @@ function displayCreate(){
   }
 
   function validateMac(mac){
-    var regex = /^([0-9A-F]{2}[:-]){5}([0-9A-F]{2})$/;
-    return regex.test(mac);
+    // var mac = "c4:9a:02:46:a2:64";
+    var re = /^(?!(?:ff:ff:ff:ff:ff:ff|00:00:00:00:00:00))(?:[\da-f]{2}:){5}[\da-f]{2}$/i;
+    return re.test(mac);
   }
 
 function deleteDevice(id){
